@@ -10,5 +10,18 @@
 namespace Classes;
 
 class ExampleClass {
+    
     const SOME_CONSTANT_CLASS = 'SOME_CONSTANT_CLASS';
+    /**
+     * @var string
+     */
+    private $someVar;
+
+    public function getSomeVar() : string {
+        return $this->someVar;
+    }
+
+    public function setSomeVar(string $someVar) {
+        $this->someVar = $someVar;
+    }
 }
