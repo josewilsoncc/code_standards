@@ -1,7 +1,7 @@
 <?php
 
 /*
- * Ejemplo de codificación estandar
+ * Ejemplo de codificación estandar para PHP 7.0
  *
  * Jose Capera <josewilsoncc@gmail.com>
  *
@@ -12,10 +12,9 @@ namespace Classes;
 
 class ExampleClass {
 
+    #Las constantes siempre van al principio de la clase, nombradas con mayúscula y guión bajo entre palabras.
     const SOME_CONSTANT_CLASS = 'SOME_CONSTANT_CLASS';
-    /**
-     * @var string
-     */
+    
     private $someVar;
 
     function __construct()
