@@ -17,7 +17,7 @@ class ExampleClass {
 
     /*
      * Debido a que los tipos especificos para las varibles de clase estan incluidos a partir de PHP 7.1, si se quiere
-     * que una variable sea de tipo String por ejemplo, se debe de declarar como privada y forzarla en los metodos set y
+     * que una variable sea de tipo String por ejemplo, se debe de declarar como privada y forzarla en los métodos set y
      * get de dicha variable, para este ejemplo: getSomeVar() y setSomeVar(string $someVar).
      */
     private $someVar;
@@ -26,10 +26,12 @@ class ExampleClass {
     {
     }
 
+    #Este método obliga a que el valor retornado por la variable $someVar sea de tipo String
     public function getSomeVar() : string {
         return $this->someVar;
     }
 
+    #Este método obliga a que el valor asignado a la variable sea de tipo String
     public function setSomeVar(string $someVar) {
         $this->someVar = $someVar;
     }
