@@ -10,7 +10,9 @@
 #El namespace debe de estar relacionado con la ubicación de la clase.
 namespace Classes;
 
-class ExampleClass {
+#Las llaves de las clases siempre van alineadas y en la siguiente linea luego de la declaración
+class ExampleClass
+{
 
     #Las constantes siempre van al principio de la clase, nombradas con mayúscula y guión bajo entre palabras.
     const SOME_CONSTANT_CLASS = 'SOME_CONSTANT_CLASS';
@@ -29,12 +31,14 @@ class ExampleClass {
     }
 
     #Este método obliga a que el valor retornado por la variable $someVar sea de tipo string
-    public function getSomeVar() : string {
+    public function getSomeVar() : string
+    {
         return $this->someVar;
     }
 
     #Este método obliga a que el valor asignado a la variable sea de tipo string
-    public function setSomeVar(string $someVar) {
+    public function setSomeVar(string $someVar)
+    {
         $this->someVar = $someVar;
     }
 }
