@@ -10,8 +10,12 @@
 #El namespace debe de estar relacionado con la ubicación de la clase.
 namespace Classes;
 
-#Las llaves de las clases siempre van alineadas y en la siguiente linea luego de la declaración
-class ExampleClass
+/*
+ * Para declarar una clase primero la palabra reservada class, luego el nombre de la clase usando UpperCamelCase,
+ * se extiende de ser necesario, y al final de linea las clases que se implementan.
+ * Las llaves de las clases siempre van alineadas y en la siguiente linea luego de la declaración
+ */
+class ExampleClass extends ExampleParentClass implements ExampleInterfaceClass
 {
 
     #Las constantes siempre van al principio de la clase, nombradas con mayúscula y guión bajo entre palabras.
@@ -53,5 +57,12 @@ class ExampleClass
             return null;
         else
             return $someOptionalArray;
+    }
+
+    #Este metodo se define debido a que se implemento la clase ExampleInterfaceClass
+    public function getBoolean():bool
+    {
+        #En algunos casos como en el de la función someFunction se puede usar un operador ternario en lugar de un if
+        return $this->someVar?true:false;
     }
 }
