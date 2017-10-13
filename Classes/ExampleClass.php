@@ -41,4 +41,17 @@ class ExampleClass
     {
         $this->someVar = $someVar;
     }
+
+    /*
+     * la funciones y sus parametros son nombrados usando lowerCamelCase y NO UpperCamelCase.
+     * los array al ser inicializados se usan [] y no array()
+     */
+    public function someFunction(array $someOptionalArray = [])
+    {
+        #Para un if/else de una unica linea, no usar llaves
+        if(empty($someOptionalArray))
+            return null;
+        else
+            return $someOptionalArray;
+    }
 }
