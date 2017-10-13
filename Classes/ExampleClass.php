@@ -22,16 +22,18 @@ class ExampleClass {
      */
     private $someVar;
 
-    function __construct()
+    #Este constructor obliga a que el valor asignado a la variable sea de tipo string
+    function __construct(string $someVar)
     {
+        $this->someVar = $someVar;
     }
 
-    #Este método obliga a que el valor retornado por la variable $someVar sea de tipo String
+    #Este método obliga a que el valor retornado por la variable $someVar sea de tipo string
     public function getSomeVar() : string {
         return $this->someVar;
     }
 
-    #Este método obliga a que el valor asignado a la variable sea de tipo String
+    #Este método obliga a que el valor asignado a la variable sea de tipo string
     public function setSomeVar(string $someVar) {
         $this->someVar = $someVar;
     }
